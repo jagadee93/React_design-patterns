@@ -5,20 +5,22 @@ import styled from "styled-components";
 const Container = styled.div`
 display: flex;
 `;
+
 const Pane = styled.div`
-flex: 1;
+flex: ${props => props.weight};
 `;
 
 
-const SplitScreen = ({ left: Left, right: Right }) => {
-    //renaming the components
+const SplitScreen = ({ children, leftWeight = 1, rightWeight = 1, }) => {
+    const [left, right] = children;
+    //destructuring children
     return (
         <Container>
-            <Pane>
-                <Left />
+            <Pane weight={leftWeight}>
+                {left}
             </Pane>
-            <Pane >
-                <Right />
+            <Pane weight={rightWeight} >
+                {right}
             </Pane>
         </Container>
     )
