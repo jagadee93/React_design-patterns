@@ -1,0 +1,32 @@
+[
+  {
+    "name": "John doe",
+    "age": 34,
+    "hairColor": "red",
+    "hobbies": ["swimming", "Eating", "video games"]
+  },
+  {
+    "name": "Jack daniel",
+    "age": 34,
+    "hairColor": "red",
+    "hobbies": ["Drinking", "Drinking", "Conflicts"]
+  },
+  {
+    "name": "vikram rathod",
+    "age": 34,
+    "hairColor": "32",
+    "hobbies": ["GYm", "Killing criminals", "Playing With Daughter"]
+  },
+  {
+    "name": "Veerappan",
+    "age": 55,
+    "hairColor": "brown",
+    "hobbies": ["Killing", "Smuggling", "Playing games"]
+  },
+  {
+    "name": "Megana kaur",
+    "age": 20,
+    "hairColor": "black",
+    "hobbies": ["Chatting", "Eating", "Flirting"]
+  }
+]
