@@ -1,7 +1,6 @@
 import React from 'react'
 const LargePersonListItem = ({ person }) => {
 
-    console.log('')
     const { name, age, hairColor, hobbies } = person;
     return (
         <>
