@@ -6,6 +6,7 @@ import LargePersonListItem from '../people/LargePersonListItem';
 const DisplayLists = () => {
     return (
         <div>
+
             <RegularList items={people} resourceName={'person'} itemComponent={SmallPersonListItem} />
             <RegularList items={people} resourceName={'person'} itemComponent={LargePersonListItem} />
         </div>

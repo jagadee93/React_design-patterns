@@ -1,0 +1,32 @@
+[
+  {
+    "name": "fan",
+    "price": "500$",
+    "description": "good fans that spins without giving air",
+    "rating": "4.5"
+  },
+  {
+    "name": "Refrigerator",
+    "price": "1000$",
+    "description": "good refrigerator that keeps food warm",
+    "rating": "4.5"
+  },
+  {
+    "name": "AC",
+    "price": "2000$",
+    "description": "good AC that keeps room warm",
+    "rating": "4.5"
+  },
+  {
+    "name": "TV",
+    "price": "3000$",
+    "description": "good TV that keeps room warm",
+    "rating": "4.5"
+  },
+  {
+    "name": "Washing Machine",
+    "price": "4000$",
+    "description": "good Washing Machine that keeps room warm",
+    "rating": "4.5"
+  }
+]
