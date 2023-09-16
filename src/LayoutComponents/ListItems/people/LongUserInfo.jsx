@@ -1,8 +1,7 @@
-import React from 'react'
-const LargePersonListItem = ({ person }) => {
 
-    const { name, age, hairColor, hobbies } = person;
-    return (
+const LongUserInfo = ({ user }) => {
+    const { name, age, hairColor, hobbies } = user || {};
+    return user ? (
         <>
             <h3>{name}</h3>
             <p>{age} Years</p>
@@ -13,7 +12,7 @@ const LargePersonListItem = ({ person }) => {
             }
             </ul>
         </>
-    )
+    ) : <p>Loading ...</p>
 }
 
-export default LargePersonListItem
+export default LongUserInfo
