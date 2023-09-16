@@ -3,12 +3,20 @@ import React, { useState, useEffect } from 'react'
 
 const ResourceLoader = ({ children, resourceUrl, resourceName }) => {
     const [state, setState] = useState(null);
+
     useEffect(() => {
+        let isMounted = true;
+        const controller = new AbortController();
         (async () => {
-            const response = await axios.get(resourceUrl);
-            setState(response.data)
+            const response = await axios.get(resourceUrl, { signal: controller.signal });
+            isMounted && setState(response.data)
             console.log(response.data)
         })();
+
+        return () => {
+            isMounted = false;
+            isMounted && controller.abort();
+        }
     }, [resourceUrl])
     return (
         <>
