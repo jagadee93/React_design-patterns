@@ -3,7 +3,7 @@
 // import DisplayLists from './LayoutComponents/ListItems/regularlist/DisplayLists';
 // import DisplayNumberedList from './LayoutComponents/ListItems/NumberedList/DisplayNumberedList';
 // import DisplayModal from './LayoutComponents/Modal/DisplayModal';
-import DisplayCurrentUser from './ContainerComponents/DisplayCurrentUser';
+import DisplayCurrentUser from './ContainerComponents/DisplayUserData';
 
 function App() {
 

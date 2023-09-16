@@ -94,14 +94,20 @@ app.get("/api/users/:id", (req, res) => {
     res.json(users.find(user => user.id === Number(id)))
 })
 
+
+
 app.post("/api/users/:id", (req, res) => {
     const { id } = req.params;
-
     const { user: UpdatedUser } = req.body;
     users = users.map(user => user.id === Number(id) ? UpdatedUser : user);
     res.json(users.find(user => user.id === Number(id)))
 }
 )
+
+app.get(`/api/products/:id`, (req, res) => {
+    const { id } = req.params;
+    res.json(products.find(product => product.id === Number(id)))
+})
 
 app.listen(3000, () => {
     console.log("Server is running on port 3000");
