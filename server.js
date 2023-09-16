@@ -88,12 +88,15 @@ app.get("/api/currentuser", (req, res) => {
 })
 
 app.get("/api/users/:id", (req, res) => {
+
     const { id } = req.params;
+    console.log(id)
     res.json(users.find(user => user.id === Number(id)))
 })
 
 app.post("/api/users/:id", (req, res) => {
     const { id } = req.params;
+
     const { user: UpdatedUser } = req.body;
     users = users.map(user => user.id === Number(id) ? UpdatedUser : user);
     res.json(users.find(user => user.id === Number(id)))

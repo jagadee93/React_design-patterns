@@ -1,6 +1,7 @@
 
 import CurrentUserLoader from './CurrentUserLoader'
 import LongUserInfo from '../LayoutComponents/ListItems/people/LongUserInfo'
+import UserLoader from './UserLoader'
 
 const DisplayCurrentUser = () => {
     return (
@@ -9,6 +10,17 @@ const DisplayCurrentUser = () => {
             <CurrentUserLoader>
                 <LongUserInfo />
             </CurrentUserLoader>
+
+            <h2>Displaying User By id </h2>
+
+            <UserLoader userId={1}>
+                <LongUserInfo />
+            </UserLoader>
+            <UserLoader userId={4}>
+                <LongUserInfo />
+            </UserLoader>
+
+
         </>
     )
 }
