@@ -5,20 +5,17 @@ const DataSourceLoader = ({ children, resourceName, getDataFunc = () => { } }) =
     const [state, setState] = useState(null)
 
     useEffect(() => {
-        let isMounted = true;
+
         (async () => {
             try {
                 const data = await getDataFunc();
-                isMounted && setState(data);
+                setState(data);
             } catch (err) {
                 console.log(err)
             }
         })();
 
-        return () => {
-            isMounted = false;
 
-        }
     }, [getDataFunc])
 
     return (
@@ -26,6 +23,7 @@ const DataSourceLoader = ({ children, resourceName, getDataFunc = () => { } }) =
             {
                 React.Children.map(children, child => {
                     if (React.isValidElement(child)) {
+                        console.log(child)
                         return React.cloneElement(child, { [resourceName]: state })
                     }
                     return child
