@@ -3,13 +3,19 @@
 // import DisplayLists from './LayoutComponents/ListItems/regularlist/DisplayLists';
 // import DisplayNumberedList from './LayoutComponents/ListItems/NumberedList/DisplayNumberedList';
 // import DisplayModal from './LayoutComponents/Modal/DisplayModal';
-import DisplayCurrentUser from './ContainerComponents/DisplayUserData';
+// import DisplayCurrentUser from './ContainerComponents/DisplayUserData';
+
+import DisplayControlledForms from "./ControlledComponents/DisplayControlledForms"
+import DisplayModal from "./ControlledComponents/DisplayModal"
+import DisplayUncontrolledForm from "./unControlledComponents/DisplayUncontrolledForm"
+
 
 function App() {
-
   return (
     <div className='app'>
-      <DisplayCurrentUser />
+      <DisplayUncontrolledForm />
+      <DisplayControlledForms />
+      <DisplayModal />
     </div>
   )
 }
