@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+src/ControlledComponents
+src/ContainerComponents
+src/LayoutComponents
+src/unControlledComponents
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
