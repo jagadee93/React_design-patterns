@@ -1,11 +1,11 @@
-import DisplayUncontrolledOnBoardingFlow from "./unControlledComponents/DisplayUncontrolledOnBoardingFlow"
+import DisplayControlledOnBoardingFlow from "./ControlledComponents/DisplayControlledOnBoardingFlow"
 
 
 
 function App() {
   return (
     <div className='app'>
-      <DisplayUncontrolledOnBoardingFlow />
+      <DisplayControlledOnBoardingFlow />
     </div>
   )
 }
