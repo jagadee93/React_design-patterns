@@ -1,12 +1,14 @@
 
-import { printProps } from "./printProps";
 import UserInfo from "../LayoutComponents/ListItems/people/UserInfo"
-const UserInfoWrapped = printProps(UserInfo)
+
+import { withUser } from "./withUser";
+
+const UserInfoWrapped = withUser(UserInfo, '1');
 
 export const DisplayHoc = () => {
     return (
         <div>
-            <UserInfoWrapped a={1} b={2} obj={{ name: "jag" }} />
+            <UserInfoWrapped />
         </div>
     )
 }
