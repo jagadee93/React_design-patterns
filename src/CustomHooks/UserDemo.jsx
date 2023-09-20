@@ -1,7 +1,7 @@
-import React from 'react'
-import { useCurrentUser } from './useCurrentUser';
-const UserDemo = () => {
-    const user = useCurrentUser();
+
+import { useUser } from './useUser';
+const UserDemo = ({ userId }) => {
+    const user = useUser(3);
     const { name, age } = user || {};
     console.log(user)
     return user ? (
