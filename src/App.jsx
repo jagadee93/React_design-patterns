@@ -1,10 +1,12 @@
-import { DisplayHoc } from "./HigherOrderComponents/DisplayHoc"
+
+import { UserInfoForm } from "./HigherOrderComponents/UserInfoForm";
 
 
 function App() {
   return (
     <div className='app'>
-      <DisplayHoc />
+      <UserInfoForm />
+
     </div>
   )
 }
