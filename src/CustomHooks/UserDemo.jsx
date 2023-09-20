@@ -1,7 +1,7 @@
 
 import { useUser } from './useUser';
 const UserDemo = ({ userId }) => {
-    const user = useUser(3);
+    const user = useUser(userId);
     const { name, age } = user || {};
     console.log(user)
     return user ? (
