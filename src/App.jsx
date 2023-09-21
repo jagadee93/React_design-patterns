@@ -1,11 +1,8 @@
-import UserDemo from "./CustomHooks/UserDemo"
-
+import { RecursiveFnDemo } from "./FunctionalProgramming/RecursiveFnDemo"
 function App() {
   return (
     <div className='app'>
-      <UserDemo userId={1} />
-      <UserDemo userId={3} />
-
+      <RecursiveFnDemo />
     </div>
   )
 }
