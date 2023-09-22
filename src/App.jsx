@@ -1,8 +1,9 @@
-import { RecursiveFnDemo } from "./FunctionalProgramming/RecursiveFnDemo"
+import { DisplayComposition } from "./FunctionalProgramming/DisplayComposition"
+
 function App() {
   return (
     <div className='app'>
-      <RecursiveFnDemo />
+      <DisplayComposition />
     </div>
   )
 }
