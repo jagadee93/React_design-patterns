@@ -2,7 +2,7 @@ import React from 'react'
 
 export const partiallyApply = (Component, partialProps) => {
     return (props) => {
-        <Component {...partialProps} {...props} />
+        return <Component {...partialProps} {...props} />
     }
 }
 
@@ -16,7 +16,7 @@ export const Button = ({ size, color, text, ...props }) => {
     )
 }
 
-const DangerButton = partiallyApply(Button, { color: "red" });
-const BigSuccessButton = partiallyApply(Button, { color: "green", size: "large" })
+export const DangerButton = partiallyApply(Button, { color: "red" });
+export const BigSuccessButton = partiallyApply(Button, { color: "green", size: "large" })
 
 
